@@ -1,0 +1,186 @@
+{
+    box-sizing: border-box;
+    font-family: 'open sans';
+
+
+    }
+    
+body /* Estilos del cuerpo de la página*/
+{
+    background: #c3d6db; /*color de fondo de la página*/
+    font-family: 'open sans';
+        font-size: 20px; 
+    width: 1200px;
+    margin: auto;
+}
+
+/*Estilo de la imagen*/
+#imagenlogo
+{
+    background: url(https://centrodeterapiasencuentro.es/wp-content/uploads/2020/05/Alicia-Mena-iconos-25.png) no-repeat left;
+    /*Agregamos un padding*/
+    padding: 10em 0em 0em 0em;
+    text-transform: uppercase;
+}
+
+
+
+
+/*Estilo para el subtitulado*/
+#subtitulo
+{
+    padding: 0em;
+    margin-left: 350px;
+    margin: top 700px;
+    font-size: 55px;
+    color: #464022;
+}
+/*Estilo para los elementos de la lista del menú*/
+#menu li
+{ 
+    /*AHORA LOS BOTONES SE VISUALIZAN EN BLOQUES*/
+    display: inline-block;
+}
+/*Estilo para los elementos de la lista del menu*/
+#menu li
+{
+    display: block;
+    float: left;
+    margin-right: 0.12em;
+    padding: 1em 1.5em;
+    /*COMO VEMOS, SE GENERO UN CUADRO PARA LOS BOTONES*/
+    background: #CEE5D0;
+
+    /*DAMOS UNA SOMBRITA A LOS BOTONES*/
+    box-shadow: inset 0px -2px 0px 0px #94B49F;
+    text-decoration: none;
+
+    /*UNA SOMBRA PARA EL TEXTO COMO SE VISUALIZA*/
+    text-shadow: 1px 1px 0px #666;
+    text-transform: uppercase;
+    font-size: .90em;
+    color: #94B49F;
+}
+/*Estilo para la sección que muestra el contenido*/
+#seccion
+{
+    width: 1125px;
+    padding: 20px 40px;
+    background: #fafafa;
+    height: auto
+}
+
+/*Estilo para la imagen que se encuentra dentro de la seccion*/
+#imagen
+{
+    margin-top: 0em;
+    margin-left: 320px;
+    width: 330px;
+    height: 250px;
+    text-align: center;
+}
+
+/*Estilo para el titulo dentro de la seccion*/
+#subtitulo2
+{
+    font-family: 'Patrick Hand',;
+    font-size: 30px;
+    color: #030303;
+}
+
+/*Estilo para el texto del lado derecho*/
+#ladoizquierdo
+{
+    margin: -5px 20px 0px 0px;
+    float: left;
+    width: 65%;
+    text-align: justify; /*Justifica el texto*/
+    color: #666;
+}
+/*estilo para el texto del footer del documento*/
+
+#footer{
+    font-family: 'open sans';
+    text-align: center;
+    border: 10px;
+    font-size: 20px;
+    background-color: #94B49F;
+    width: 100%;
+    padding: 4px;
+}
+
+/*Estilo para todos los parrafos del documento*/
+p{
+    font-family: 'open sansd';
+    font-size: 15pt;
+}
+
+@media screen and (max-width:1500px) {
+    .seccion {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+
+    header .titulo {
+        font-size: 75px;
+    }
+
+    .none {
+        display: none
+    }
+
+    .imagenes {
+        flex-grow: 1;
+    }
+
+    .seccion {
+        width: 90%;
+    }
+
+    .fondo {
+        height: auto;
+    }
+
+    .especial {
+        display: none;
+    }
+    .imagen-logo {
+        margin-left:-160px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+
+    header .titulo {
+        font-size: 65px;
+    }
+
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .objetivo {
+        font-size: 46px;
+    }
+
+    .subtitulo-objetivo {
+        font-size: 20px;
+    }
+}
